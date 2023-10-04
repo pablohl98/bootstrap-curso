@@ -1,0 +1,37 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <%= link_to principal_path, class: 'navbar-brand' do %>
+      <%= image_tag("favicon.png", class: "navbar-brand", alt: "Studio BADDOG") %>
+    <% end %>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-lg-auto">
+        <li class="nav-item">
+          <%= link_to 'Inicio', principal_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sitios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Últimos Proyectos</a></li>
+            <li><a class="dropdown-item" href="#">Single Page</a></li>
+            <li><a class="dropdown-item" href="#">Multi Page</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comencemos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Interesado?</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
