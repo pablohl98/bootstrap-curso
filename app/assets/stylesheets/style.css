@@ -68,7 +68,20 @@ a:hover{
 
 
 /**** My Styles ****/
-
+.bg-gradient-blue-green{
+  background-color: rgba(83,184,152,1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(47,145,222,0.91),
+    rgba(83,184,152,1)
+  );    
+}
+.bg-third-color{
+  background-color: var(--third-color);
+}
+.text-third{
+  color: var(--third-color);
+}
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (min-width: 575.98px) {  }
 

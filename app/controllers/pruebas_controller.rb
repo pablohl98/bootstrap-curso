@@ -6,4 +6,7 @@ class PruebasController < ApplicationController
     def principal
         
     end
+    def sitios
+        
+    end
 end
