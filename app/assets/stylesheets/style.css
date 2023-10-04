@@ -1,0 +1,83 @@
+/**** Custom Properties ****/
+:root{
+    --first-color: rgb(217,0,98);
+    --first-alpha-color: rgba(217, 0, 98, 0.75);
+    --second-color: rgb(20,25,45);
+    --second-alpha-color: rgba(20,25,45,0.75);
+    --third-color: rgb(80,20,100);
+    --third-alpha-color: rgba(80,20,100,0.75);
+
+    --link-color: rgb(80,158,227);
+    --link-alpha-color: rgba(80,158,227,0.75);
+
+    --bg-color: rgb(245,245,245);
+    --bg-alpha-color: rgba(245,245,245,0.75);
+}
+
+/**** Reset Styles ****/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/**** Bootstrap Styles ****/
+.bg-dark{
+    background-color: var(--second-color) !important;
+}
+.dropdown-item{
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all 0.9s ease-out;
+}
+.dropdown-item:hover{
+    color: var(--third-alpha-color);
+}
+.navbar-brand{
+    width: auto;
+    height: 3rem;
+}
+.navbar-dark{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler:hover{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.75;
+}
+
+.nav-item{
+    transition: all 0.9s ease-out;
+}
+.nav-item:hover{
+    background-color: var(--first-alpha-color);
+}
+.nav-link{
+    margin-left: 0.5rem;
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.nav-link-hover{
+    color: white;
+}
+
+
+
+/**** My Styles ****/
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {  }
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) { 
+    .nav-item:hover{
+        background-color: transparent;
+    }
+ }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }
