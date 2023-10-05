@@ -83,8 +83,16 @@ a:hover{
     rgba(83,184,152,1)
   );    
 }
+.bg-alpha-color{
+    background-color: var(--bg-alpha-color);
+}
 .bg-color{
     background-color: var(--bg-color);
+}
+.bg-hero-image{
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bg-third-color{
   background-color: var(--third-color);

@@ -1,5 +1,5 @@
 <main class="pt-5 bg-color">
-  <section id="ultimos-proyectos" class="min-vh-100">
+  <section id="ultimos-proyectos" class="min-vh-100 mb-5">
     <div class="text-center">
       <h1>Sitios web 100% responsivos</h1>
       <p class="fs-5">
@@ -34,11 +34,69 @@
       </button>
     </div>
   </section>
-  <section id="single-page" class="min-vh-100">
-    <h2>Single Page</h2>
+  <section id="single-page" class="min-vh-100 bg-hero-image" 
+  style="--bg-image: url(<%= asset_path('site-singlepage.jpg') %>)" >
+    <article class="bg-alpha-color min-vh-100 d-flex align-items-center">
+        <div class="container">
+          <article class="col-12 col-lg-6 offset-lg-6">
+            <a href="/contacto" class="btn btn-success btn-lg text-white mb-5" >
+              <b>Desde 400$ <small>USD</small></b>
+            </a>
+            <h2>Sitio de una sola página</h2>
+            <small class="">El precio puede ser mas alto (o mas bajo) dependiendo de los requisitos de su proyecto</small>
+            <p class="my-5 fs-5">Una sola página o página de destino es un sitio web que consta de una página. Perfecto para presentar a tu empresa, organización producto o servicio de una manera hermosa y moderna en Internet.</p>
+            <%= link_to contacto_path, class: 'fw-bold fs-4' do %>
+              Solicite una Cotización Ahora
+              <i class="bi bi-chevron-right"></i>
+            <% end %>
+            <div class="row mt-5">
+              <div class="col">
+                 <p><i class="bi bi-check-lg"></i>Sitio web de una sola página</p>
+                 <p><i class="bi bi-check-lg"></i>100% Responsivo</p>
+                 <p><i class="bi bi-check-lg"></i>Diseño Personalizado</p>
+              </div>
+              <div class="col">
+                 <p><i class="bi bi-check-lg"></i>Correción de Estilo</p>
+                 <p><i class="bi bi-check-lg"></i>Edición de Imagenes</p>
+                 <p><i class="bi bi-check-lg"></i>Soporte</p>
+              </div>
+            </div>
+          </article>
+    
+        </div>
+    </article>
   </section>
-  <section id="multi-page" class="min-vh-100">
-    <h2>Multi Page</h2>
+  <section id="multi-page" class="min-vh-100 bg-hero-image"
+  style="--bg-image: url(<%= asset_path('site-multipage.jpg') %>)">
+    <article class="bg-alpha-color min-vh-100 d-flex align-items-center">
+        <div class="container">
+          <article class="col-12 col-lg-6">
+            <a href="/contacto" class="btn btn-success btn-lg text-white mb-5" >
+              <b>Desde 1000$ <small>USD</small></b>
+            </a>
+            <h2>Sitio Multipágina</h2>
+            <small class="">El precio puede ser mas alto (o mas bajo) dependiendo de los requisitos de su proyecto</small>
+            <p class="my-5 fs-5"> Un sitio web de varias páginas consta de dos o más páginas. Este formato es útilsi tiene ciertos elementos que desea mantener separados por páginas y urls diferentes.</p>
+            <%= link_to contacto_path, class: 'fw-bold fs-4' do %>
+              Solicite una Cotización Ahora
+              <i class="bi bi-chevron-right"></i>
+            <% end %>
+            <div class="row mt-5">
+              <div class="col">
+                 <p><i class="bi bi-check-lg"></i>2 a 6 páginas</p>
+                 <p><i class="bi bi-check-lg"></i>100% Responsivo</p>
+                 <p><i class="bi bi-check-lg"></i>Diseño Personalizado</p>
+              </div>
+              <div class="col">
+                 <p><i class="bi bi-check-lg"></i>Correción de Estilo</p>
+                 <p><i class="bi bi-check-lg"></i>Edición de Imagenes</p>
+                 <p><i class="bi bi-check-lg"></i>Soporte</p>
+              </div>
+            </div>
+          </article>
+    
+        </div>
+    </article>
   </section>
 
 </main>

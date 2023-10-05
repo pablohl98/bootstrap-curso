@@ -9,4 +9,7 @@ class PruebasController < ApplicationController
     def sitios
         
     end
+    def contacto
+        
+    end
 end
