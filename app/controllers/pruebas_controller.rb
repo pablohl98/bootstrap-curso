@@ -12,4 +12,7 @@ class PruebasController < ApplicationController
     def contacto
         
     end
+    def clientes
+        
+    end
 end

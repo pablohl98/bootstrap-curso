@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/principal", to: "pruebas#principal", as: "principal"
   get "/sitios", to: "pruebas#sitios", as: "sitios"
   get "/contacto", to: "pruebas#contacto", as: "contacto"
+  get "/clientes", to: "pruebas#clientes", as: "clientes"
 end
