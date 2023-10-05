@@ -1,75 +1,44 @@
-<main class="bg-gradient-blue-green pt-5">
-  <div class="container">
-    <section class="row text-white align-items-lg-center mb-5">
-      <article class="col-12 col-lg-5">
-        <h3>Necesitas un increíble sitio web?</h3>
-        <p class="fs-5">Un sitio hermoso, moderno, responsivo y personalziado para tu compañia, negocio, marca, servicio o producto.</p>
-        <a href="#servicios" class="btn btn-success btn-lg fw-bold" >Sí, Empecemos!</a>
-      </article>
-      <article class="col-12 col-lg-7">
-        <%= image_tag("header-image.png", class: "img-fluid", alt: "Necesitas un increíble sitio web?") %>
-      </article>
-      <article class="col-12 col-lg-5 order-lg-1">
-        <h2>Sitios web Responsivos</h2>
-        <p class="fs-5">Un sitio hermoso, moderno, responsivo y personalziado para tu compañia, negocio, marca, servicio o producto.Es importante proporcionar a tus visitantes una experiencia web óptima en dispositivos móviles.El diseño web responsivo significa que tu sitio se adapta instantáneamente al dispositivo que el visitante utiliza. Mi trabajo es hacer que la visita de tus usuarios sea lo más agradable e intuitiva para ellos </p>
-      </article>
-      <article class="col-12 col-lg-7">
-        <%= image_tag("header-image-2.png", class: "img-fluid", alt: "Sitios web Responsivos") %>
-      </article>
-    </section>
-    <section id="servicios" class="row min-vh-100 align-items-lg-center">
-      <article class="col-12 col-md-6 col-lg-3 d-flex">
-        <div class="card mx-auto mb-3" style="width: 18rem;">
-          <%= image_tag("icon-sites.png", class: "bg-third-color", alt: "Nuevo sitio Web") %>
-          <div class="card-body">
-          <h5 class="card-title">Nuevo Sitio Web</h5>
-          <p class="card-text">Necesitas un nuevo sitio web 100% responsivo?</p>
-          <%= link_to sitios_path, class: 'text-third' do %>
-            Más Detalles
-            <i class="bi bi-chevron-right"></i>
-          <% end %>
-          </div>
-        </div>     
-      </article>
-      <article class="col-12 col-md-6 col-lg-3 d-flex">
-        <div class="card mx-auto mb-3" style="width: 18rem;">
-          <%= image_tag("icon-clients.png", class: "bg-third-color", alt: "Clients") %>
-          <div class="card-body">
-          <h5 class="card-title">Clientes</h5>
-          <p class="card-text">Clientes Felices y proyectos hermosos</p>
-          <%= link_to sitios_path, class: 'text-third' do %>
-            Más Detalles
-            <i class="bi bi-chevron-right"></i>
-          <% end %>
-          </div>
+<main class="pt-5 bg-color">
+  <section id="ultimos-proyectos" class="min-vh-100">
+    <div class="text-center">
+      <h1>Sitios web 100% responsivos</h1>
+      <p class="fs-5">
+        Desarrollo sitios web de una sola página y de varias páginas
+      </p>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("work-slide-1", class: "d-block w-100", alt: "Trabajo 1") %>  
         </div>
-      </article>
-      <article class="col-12 col-md-6 col-lg-3 d-flex">
-        <div class="card mx-auto mb-3" style="width: 18rem;">
-          <%= image_tag("icon-workflow.png", class: "bg-third-color", alt: "Flujo de Trabajo") %>
-          <div class="card-body">
-          <h5 class="card-title">Flujo de Trabajo</h5>
-          <p class="card-text">Escucho tus necesidades, Discutamos tu Proyecto</p>
-          <%= link_to sitios_path, class: 'text-third' do %>
-            Más Detalles
-            <i class="bi bi-chevron-right"></i>
-          <% end %>
-          </div>
+        <div class="carousel-item">
+          <%= image_tag("work-slide-2", class: "d-block w-100", alt: "Trabajo 2") %> 
         </div>
-      </article>
-      <article class="col-12 col-md-6 col-lg-3 d-flex">
-        <div class="card mx-auto mb-3" style="width: 18rem;">
-          <%= image_tag("icon-about.png", class: "bg-third-color", alt: "Contacto") %>
-          <div class="card-body">
-          <h5 class="card-title">Contacto</h5>
-          <p class="card-text">Interesado? comencemos con tu nuevo proyecto</p>
-          <%= link_to sitios_path, class: 'text-third' do %>
-            Más Detalles
-            <i class="bi bi-chevron-right"></i>
-          <% end %>
-          </div>
+        <div class="carousel-item">
+          <%= image_tag("work-slide-3", class: "d-block w-100", alt: "Trabajo 3") %> 
         </div>
-      </article>
-    </section>
-  </div>
+        <div class="carousel-item">
+          <%= image_tag("work-slide-4", class: "d-block w-100", alt: "Trabajo 4") %> 
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("work-slide-5", class: "d-block w-100", alt: "Trabajo 5") %> 
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section id="single-page" class="min-vh-100">
+    <h2>Single Page</h2>
+  </section>
+  <section id="multi-page" class="min-vh-100">
+    <h2>Multi Page</h2>
+  </section>
+
 </main>
