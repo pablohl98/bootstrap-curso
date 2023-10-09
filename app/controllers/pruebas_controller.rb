@@ -15,4 +15,7 @@ class PruebasController < ApplicationController
     def clientes
         
     end
+    def comencemos
+        
+    end
 end

@@ -1,1 +1,71 @@
-<h2>hola soy el contacto</h2>
+<main class="pt-5 bg-color">
+    <div class="container mb-5">
+      <section class="row">
+        <article class="col-12 text-center">
+          <h1>Interesado?</h1>
+          <p class="fs-5">Envíame tus comentarios.</p>
+          <p class="fs-5">Para más información contactame en <a href="mailto:info@studiobaddog.com">info@studiobaddog.com</a></p>
+        </article>
+        <article class="col-12 col-lg-6 order-lg-1">
+          <form action="" method="get">
+            <div class="mb-3">
+              <label class="form-label" for=""> Nombre:  </label>
+              <input type="text" placeholder="Ingresa tu nombre" class="form-control" name="name" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for=""> Email:  </label>
+              <input type="email" placeholder="Ingresa tu email" class="form-control" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="comments"> Comentarios:  </label>
+              <textarea rows="4" name="comments" id="comments" class="form-control" placeholder="Déjanos tus comentarios" required></textarea>
+            </div>
+            <div class="mb-3">
+              <input type="submit" class="btn btn-large btn-success"value="Enviar">
+            </div>
+
+          </form>
+        </article>
+        <article class="col-12 col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2299.319733391318!2d-106.01192624999477!3d28.610195877849794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea5ae4652e8921%3A0x1b26169b14860bd9!2sCESA%20Villa%20Ju%C3%A1rez!5e0!3m2!1ses-419!2smx!4v1696611200709!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+      </section>
+    </div>
+<div id="carouselExampleCaptions" class="carousel slide">
+
+  <div class="carousel-inner">
+      <div class="carousel-caption bg-second-alpha-color">
+        <article class="">
+          <h2>Alberto Coyote</h2>
+          <p class="d-none d-md-block fs-5">Desarrollador web con varios años de experiencia, trabajo todos los dias con el objetivo de superarme y siempre dar el mejor servicio posible</p>
+        </article>
+      </div>
+    <div class="carousel-item active">
+      <%= image_tag("about-1", class: "d-block w-100", alt: "Trabajo 1") %>
+
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("about-2", class: "d-block w-100", alt: "Trabajo 1") %>
+ 
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("about-3", class: "d-block w-100", alt: "Trabajo 1") %>
+
+    </div>
+    <div class="carousel-item">
+      <%= image_tag("about-4", class: "d-block w-100", alt: "Trabajo 1") %>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</main>
